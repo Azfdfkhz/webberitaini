@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/CNN_International_logo.svg.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Indo News</title>
+    
+    <!-- Tailwind CSS CDN dengan Dark Mode Enabled -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',  // Enable dark mode via class 'dark' di <html>
+        theme: {
+          extend: {
+            // Opsional: Custom colors/fonts jika perlu (mirip config.js)
+          },
+        },
+        plugins: [],  // Tanpa plugin line-clamp; kita ganti dengan CSS manual
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
